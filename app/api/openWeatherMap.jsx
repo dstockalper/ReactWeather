@@ -25,6 +25,7 @@ module.exports = {
     }, function() {
       throw new Error('Unable to fetch weather.');
       // throw new Error(res.data.message);
+      // throw new Error(err.response.data.message);
     });
   }
 }
