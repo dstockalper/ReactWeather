@@ -22,9 +22,10 @@ var Nav = React.createClass({
 
     var location = this.refs.search.value;
     var encodedLocation = encodeURIComponent(location);
+
     if(location.length > 0) {
       this.refs.search.value = '';
-      window.location.hash = '#/?location=' + encodeURIComponent;
+      window.location.hash = '#/?location=' + encodedLocation;
     }
 
     // alert('The location is: ' + location);
